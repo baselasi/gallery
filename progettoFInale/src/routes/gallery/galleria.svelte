@@ -29,7 +29,7 @@
     posts = value;
   });
 </script>
-<div class="content container col-12 mt-5 mt-md-0">
+<div class="content container col-12 mt-5 mt-md-0 p-3">
   {#if photoAlbum}
     <div class="col-12 mb-2 pt-2">
       <i class="fa fa-file" style="font-size:24px" /> ALBUM {photoAlbum[0]
@@ -38,14 +38,14 @@
     <hr />
     <div class="col-12 row">
       {#each photoAlbum as photo, i}
-        <div class="col-6 col-md-3 row">
+        <div class="col-6 col-lg-3 row">
           <button
             type="button"
-            class="btn btn-primary col-md-11 mb-2 text-start"
+            class="btn btn-primary col-md-11 mb-2  text-start"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             
-            ><img src={photo.thumbnailUrl} alt="" />Photo {i + 1}</button
+            ><img src={photo.thumbnailUrl} alt="" class=""/>Photo {i + 1}</button
           >
           <div
             class="modal fade"

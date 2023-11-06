@@ -31,13 +31,13 @@
         </button>
       </li>
     {/each}
-    <li>
+    <li class="nav-item">
       <button
         on:click={() => toggleUsers()}
         class="btn nav-item btn-primary mt-1 text-start btn-primary nav-link"
       >
         <!-- svelte-ignore a11y-invalid-attribute -->
-        <a class="" aria-current="page" href="#">PSOTS</a>
+        <a class="" aria-current="page" href="#">POSTS</a>
       </button>
     </li>
   </ul>

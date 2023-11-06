@@ -17,10 +17,7 @@
   function assignAlbum(data) {
     albums = data.slice(0, 4);
   }
-  function setAlbum(album) {
-    albumsToShow.set(album);
 
-  }
   let innerWidth;
 </script>
 
@@ -29,12 +26,12 @@
 <div class="content rounded shadow p-2">
     
     {#if albums}
-  {#if innerWidth && innerWidth > 786}
+  {#if innerWidth && innerWidth > 992}
 
         <NavBarBigScreen albums={albums}/> 
     {/if}
 
-    {#if innerWidth && innerWidth < 786}
+    {#if innerWidth && innerWidth < 992}
       <NavBarSmallScreen albums={albums}/>
     {/if}
   {/if}
@@ -43,7 +40,5 @@
 <style>
   .content{
     background-color: white;
-
-
   }
 </style>
