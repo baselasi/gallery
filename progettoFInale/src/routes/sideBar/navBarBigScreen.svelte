@@ -26,6 +26,7 @@
           class="btn nav-item btn-primary mt-1 text-start btn-primary nav-link"
         >
           <i class="fa fa-file" style="font-size:24px;color:black" />
+          <!-- svelte-ignore a11y-invalid-attribute -->
           <a class="" aria-current="page" href="#">Album {i + 1}</a>
         </button>
       </li>
@@ -35,6 +36,7 @@
         on:click={() => toggleUsers()}
         class="btn nav-item btn-primary mt-1 text-start btn-primary nav-link"
       >
+        <!-- svelte-ignore a11y-invalid-attribute -->
         <a class="" aria-current="page" href="#">PSOTS</a>
       </button>
     </li>
